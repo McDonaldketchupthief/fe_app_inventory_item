@@ -1,0 +1,2 @@
+# fe_app_inventory_item
+fe_app_inventory_item
