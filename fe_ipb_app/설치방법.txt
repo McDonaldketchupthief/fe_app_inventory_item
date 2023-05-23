@@ -1,0 +1,10 @@
+npm install 
+
+npm install --save styled-components 설치 
+
+npm install react-native-table-component
+
+`npm install axios` 
+
+
+expo start 
