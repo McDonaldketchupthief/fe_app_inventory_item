@@ -61,7 +61,8 @@ const Home = ({ navigation, route }) => {
         <Button
           title="발주 정보 리스트"
           onPress={() => navigation.navigate('MenuList')}
-          color="#35363B" // 원하는 색상 발주 정보 리스트
+          color="#35363B"
+          icon={<Image source={{ uri: 'https://www.pocketcu.co.kr/images/main/intro_img02.png' }} />}
         />
       </ButtonContainer>
       <Button

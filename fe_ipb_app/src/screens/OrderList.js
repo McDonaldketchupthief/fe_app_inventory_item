@@ -94,7 +94,6 @@ const OrderDataList = [
 const OrderList = ({ navigation, route }) => {
   return (
     <Container>
-      <Text>{route.name}</Text>
       <table>
         <thead>
           <tr>

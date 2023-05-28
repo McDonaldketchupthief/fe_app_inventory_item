@@ -109,13 +109,6 @@ const HomeStacks = () => {
               marginRight: 11,
               marginLeft: 10,
             };
-            return (
-              <MenuBtn 
-                source={require('../../assets/icons/user.png')} 
-                style={style}
-                onPress={()=>{alert('내정보 클릭')}}
-              />
-            )
           }
         }}
       />
