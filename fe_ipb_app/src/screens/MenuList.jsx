@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // import React, { Component , useState, useEffect } from 'react';
 // import { StyleSheet, View, ScrollView } from 'react-native';
 // import { Table, TableWrapper, Row } from 'react-native-table-component';
@@ -114,6 +115,7 @@ import { Table, TableWrapper, Row } from 'react-native-table-component';
 import axios from 'axios';
 
 const MenuList = () => {
+
   const url_be = "http://localhost:8080/product/list";
   const [tableDataList, setTableDataList] = useState([]);
   const [deleteModalVisible, setDeleteModalVisible] = useState(false);
@@ -122,13 +124,21 @@ const MenuList = () => {
   const tableHead = ['상품코드', '상품이름', '수량', '가격', '삭제'];
   const widthArr = [60, 60, 50, 100, 90];
 
+
   useEffect(() => {
     fetchData();
     console.log("useEffect called!!");
   }, []);
+    
+    
 
-  const fetchData = () => {
-    axios.get(url_be)
+    const fetchData = () => {
+      axios(
+        url_be,
+        {
+          method: 'get'
+        }
+      )
       .then((res) => {
         console.log("res:", res);
         console.log("orderProdutList=>res.data:", res.data);
@@ -217,4 +227,4 @@ const styles = StyleSheet.create({
   modalButtonText: { color: '#fff', fontWeight: 'bold' },
 });
 
-export default MenuList;
+export default MenuList; 

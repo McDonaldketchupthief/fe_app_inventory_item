@@ -94,7 +94,6 @@ const OrderDataList = [
 const OrderList = ({ navigation, route }) => {
   return (
     <Container>
-      <h3>{route.name}</h3>
       <table>
         <thead>
           <tr>
@@ -109,7 +108,7 @@ const OrderList = ({ navigation, route }) => {
               <td>
                 
                 <Link to={{ screen: 'OrderDetails', params: { id:  orderData.id } }}>
-                   <h2>{orderData.orderTitle}</h2>
+                   <Text>{orderData.orderTitle}</Text>
                 </Link> 
               </td>
             </tr>

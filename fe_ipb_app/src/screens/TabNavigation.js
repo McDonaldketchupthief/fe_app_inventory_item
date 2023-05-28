@@ -39,7 +39,7 @@ const TabNavigation = () => {
         tabBarShowLabel: false,
         tabBarStyle: {
           backgroundColor: '#35363B', //밑창 배경화면
-          height: 70, // 밑높이 
+          height: 50, // 밑높이 
         },
       }}
 

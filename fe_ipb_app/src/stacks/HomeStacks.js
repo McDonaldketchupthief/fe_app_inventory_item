@@ -96,7 +96,13 @@ const HomeStacks = () => {
               marginRight: 10,
               marginLeft: 11,
             };
-
+            return (
+              <MenuBtn 
+                source={require('../../assets/icons/sort.png')} 
+                style={style}
+                onPress={()=>{alert('메뉴 버튼 클릭')}}
+              />
+            )
           },
           headerRight: () => {
             const style = {
